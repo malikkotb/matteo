@@ -9,9 +9,10 @@ export default function Home() {
       </div>
 
       <div className="h-2/4 grid grid-cols-4">
+        <SceneCanvas source={"/bmw_m4"} />
         <SceneCanvas source={"/mini.glb"} />
-       
-       
+        <SceneCanvas source={"/rossa.glb"} />
+        <SceneCanvas source={"/yacht.glb"} />
       </div>
 
       <div className="h-1/4">Description</div>
