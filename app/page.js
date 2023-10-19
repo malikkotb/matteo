@@ -1,4 +1,4 @@
-import Model from "../components/Model";
+import SceneCanvas from "../components/SceneCanvas";
 
 export default function Home() {
   return (
@@ -9,11 +9,9 @@ export default function Home() {
       </div>
 
       <div className="h-2/4 grid grid-cols-4">
-        <Model source={"source"} />
-        {/* <Model source={"source"} />
-        <Model source={"source"} />
-        <Model source={"source"} /> */}
-
+        <SceneCanvas source={"/mini.glb"} />
+       
+       
       </div>
 
       <div className="h-1/4">Description</div>
