@@ -10,9 +10,9 @@ export default function Home() {
 
       <div className="h-2/4 grid grid-cols-4">
         <Model source={"source"} />
+        {/* <Model source={"source"} />
         <Model source={"source"} />
-        <Model source={"source"} />
-        <Model source={"source"} />
+        <Model source={"source"} /> */}
 
       </div>
 
