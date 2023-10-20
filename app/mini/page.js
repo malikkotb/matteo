@@ -1,13 +1,72 @@
+"use client";
 import SceneCanvas from "../../components/SceneCanvas";
-import InfoScroll from "../../components/InfoScroll";
+import gsap from "gsap";
+import React, { useState, useEffect, useRef } from "react";
+import styles from "./styles.module.css";
+
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function page() {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.create({
+      trigger: ".gallery",
+      start: "top top",
+      end: "bottom bottom",
+      pin: ".right",
+    });
+  }, []);
+    
   return (
-    <div className="flex w-screen h-screen">
+    <div>
+      <div className={styles.spacer}></div>
       {/* <div className="w-1/2 overflow-hidden">
         <SceneCanvas source={"/mini.glb"} />
       </div> */}
-      <InfoScroll />
+
+      <div className={styles.gallery}>
+        <div className={styles.left}>
+          <div className={styles.detailsWrapper}>
+            <div className={styles.details}>
+              <div className={styles.headline}></div>
+              <div className={styles.text}></div>
+              <div className={styles.text}></div>
+              <div className={styles.text}></div>
+              <div className={styles.text}></div>
+            </div>
+
+            <div className={styles.details}>
+              <div className={styles.headline}></div>
+              <div className={styles.text}></div>
+              <div className={styles.text}></div>
+              <div className={styles.text}></div>
+              <div className={styles.text}></div>
+            </div>
+
+            <div className={styles.details}>
+              <div className={styles.headline}></div>
+              <div className={styles.text}></div>
+              <div className={styles.text}></div>
+              <div className={styles.text}></div>
+              <div className={styles.text}></div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.right}>
+          <div className={styles.photos}></div>
+        </div>
+      </div>
+      <div className={styles.spacer}></div>
+      <div className={styles.spacer}></div>
+      <div className={styles.spacer}></div>
+
     </div>
   );
+}
+
+{
+  /* <div className="spacer"></div>
+      <div className="spacer"></div>
+      <div className="spacer"></div> */
 }
