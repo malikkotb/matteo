@@ -30,10 +30,10 @@ export default function page() {
         <div className=" text-4xl text-white">Mini 2023</div>
       </div>
 
-      <div ref={imageContainer} className={`flex outline outline-1 outline-red-600`}>
+      <div ref={imageContainer} className="flex bg-black outline outline-1 outline-red-600">
         <div className="left w-[50%]">
           <div className="m-auto w-[80%]">
-            <div className="h-screen flex flex-col justify-center outline outline-1 outline-red-700">
+            <div className="h-screen flex flex-col justify-center outline outline-1 outline-red-700 text-white">
               <div className="w-full text-3xl">The New Mini - 2022</div>
               <div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -42,7 +42,7 @@ export default function page() {
                 praesentium voluptatum enim autem!
               </div>
             </div>
-            <div className="h-screen flex flex-col justify-center outline outline-1 outline-red-700">
+            <div className="h-screen flex flex-col justify-center outline outline-1 outline-red-700 text-white">
               <div className="w-full text-3xl">The New Mini - 2022</div>
               <div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -52,7 +52,7 @@ export default function page() {
               </div>
             </div>
 
-            <div className="h-screen flex flex-col justify-center outline outline-1 outline-red-700">
+            <div className="h-screen flex flex-col justify-center outline outline-1 outline-red-700 text-white">
               <div className="w-full text-3xl">The New Mini - 2022</div>
               <div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -64,8 +64,10 @@ export default function page() {
           </div>
         </div>
 
-        <div ref={pinContainerRef} className={`h-screen outline outline-1 outline-red-700 flex flex-col justify-center`}>
-          <div className="rounded-xl w-[40vw] h-[40vw] bg-blue-500"></div>
+        <div ref={pinContainerRef} className={`h-screen outline outline-1 outline-red-700 items-center justify-center`}>
+          {/* <div className="rounded-xl w-[40vw] h-[40vw] bg-orange-500"></div> */}
+          {/* TODO: make 3D model rotate with scroll */}
+          <SceneCanvas source={"/mini.glb"} />
         </div>
       </div>
 
