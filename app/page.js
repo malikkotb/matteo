@@ -1,18 +1,6 @@
 "use client";
 import SceneCanvas from "../components/SceneCanvas";
-import Lenis from "@studio-freight/lenis";
-import { useEffect } from "react";
-export default function Home() {
-  useEffect(() => {
-    const lenis = new Lenis();
-
-    const raf = (time) => {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    };
-
-    requestAnimationFrame(raf);
-  }, []);
+export default function Home() {  
 
   return (
     <main className="flex flex-col justify-between h-screen">
