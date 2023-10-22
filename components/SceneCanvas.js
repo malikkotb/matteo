@@ -11,7 +11,7 @@ export default function SceneCanvas({ source }) {
   return (
     <div className="flex justify-center items-center h-full">
       <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 100]}}>
-        <color attach="background" />
+        {/* <color attach="background" /> */}
         <OrbitControls
           autoRotate
           enableZoom={false}
@@ -20,7 +20,7 @@ export default function SceneCanvas({ source }) {
         />
         <ambientLight intensity={0.5} />
         <directionalLight position={[-2, 5, 2]} intensity={1} />
-        <Stage environment={null}>
+        <Stage environment={"night"}>
           <Model source={source} scale={0.01} />
         </Stage>
       </Canvas>
