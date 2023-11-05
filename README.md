@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Matteo Just Transportation Design Portfolio
 
-## Getting Started
+Welcome to Matteo Just's Transportation Design Portfolio! This website showcases Matteo's creative work as a transportation designer, built with Next.js and Three.js to bring you an immersive experience of his design models.
 
-First, run the development server:
+## 1. Introduction
+
+This portfolio is a digital gallery that encapsulates Matteo Just's passion for transportation design. It offers a glimpse into his creative journey, presenting an array of stunning 3D models that embody innovation and aesthetic beauty.
+
+## 2. Technologies Used
+
+- **Next.js**: The website is built using Next.js, a powerful and flexible React framework, which provides fast performance and a great developer experience.
+
+- **Three.js**: For 3D modeling and rendering, Three.js is utilized. This WebGL-based library enables a smooth and interactive presentation of Matteo's design models.
+
+- **React**: The user interface is created using React components for dynamic and responsive rendering.
+
+## 3. Features
+
+- **Immersive 3D Models**: Explore Matteo's transportation design projects through interactive 3D models.
+
+- **Smooth Navigation**: Enjoy a user-friendly experience with seamless page transitions.
+
+- **Responsive Design**: The portfolio is optimized for various devices and screen sizes, ensuring an excellent viewing experience on both desktop and mobile.
+
+- **Project Descriptions**: Each design is accompanied by detailed descriptions, allowing you to understand the concepts and inspiration behind the work.
+
+## 4. Getting Started
+
+To get started, clone this repository to your local machine.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+git clone https://github.com/malikkotb/matteo
