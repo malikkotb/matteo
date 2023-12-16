@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-spring/web": "^9.7.3",
     "@react-three/drei": "^9.88.3",
     "@react-three/fiber": "^8.14.6",
     "@studio-freight/lenis": "^1.0.27",
     "@types/three": "^0.157.1",
+    "framer-motion": "^10.16.16",
     "gsap": "^3.12.2",
     "next": "13.5.5",
     "react": "^18",

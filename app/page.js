@@ -9,6 +9,8 @@ export default function Home() {
         <div className="">Matteo Just</div>
       </div>
 
+      {/* TODO: lenis smooth scroll */}
+
       <div className="h-2/4 grid grid-cols-4">
         <SceneCanvas source={"/bmw_m4"} />
         <SceneCanvas source={"/mini.glb"} />
@@ -17,10 +19,10 @@ export default function Home() {
       </div>
 
       <div className="h-1/4">Description</div>
-      <div className="flex flex-col gap-5">
-        <div className="h-screen bg-orange-500"></div>
-        <div className="h-screen bg-orange-500"></div>
-      </div>
+      {/* <div className="flex flex-col gap-5">
+        <div className="h-screen "></div>
+        <div className="h-screen"></div>
+      </div> */}
     </main>
   );
 }
