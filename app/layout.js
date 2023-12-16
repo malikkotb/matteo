@@ -19,8 +19,8 @@ export default function RootLayout({ children }) {
     requestAnimationFrame(raf);
   }, []);
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body suppressHydrationWarning className={inter.className}>{children}</body>
     </html>
   );
 }
