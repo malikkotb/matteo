@@ -4,8 +4,6 @@ import { useState, useEffect, useRef } from "react";
 export default function Hero() {
   const targetRef = useRef(null);
 
-  
-
   const { scrollYProgress } = useScroll({
     target: targetRef,
     offset: ["end end", "end start"],
@@ -28,11 +26,20 @@ export default function Hero() {
         style={{ scale, position: position }}
         className="top-[15%] left-[35%] flex flex-col text-center items-center "
       >
-        <div className="text-8xl text-black tracking-tighter ">MATTEO</div>
-        <br />
-        <div className="text-8xl text-black tracking-tighter">
-          <span className=" italic">J</span>UST
+        {/* A possibility: */}
+        <div>
+          <div className="text-8xl text-black tracking-tighter ">MA<span className="">TT</span>EO</div>
+          <br />
+          <div className="text-8xl text-black tracking-tighter">
+            <span className=" italic">J</span>UST
+          </div>
         </div>
+
+        {/* A different possibility
+        <div>
+
+        </div> */}
+
       </motion.div>
     </motion.section>
   );
