@@ -1,57 +1,33 @@
 "use client";
-import AnimateCOunter from "@/components/AnimateCOunter";
-import Counter from "@/components/Counter";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
+import Hero from "./components/Hero";
+import Loader from "./components/Loader";
+import Images from "./components/Images";
+import Projects from "./components/Projects";
 
 export default function page() {
-  const targetRef = useRef(null);
   const [animating, setAnimating] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
-        setAnimating(false)
-    }, 3500)
-  }, [])
-
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-    offset: ["start end", "end start"],
-    // container: , // by default is the current window
-  });
-
-//   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]); // fully fade out a section
+      setAnimating(false);
+    }, 3500);
+  }, []);
 
   return (
     <>
-      {animating && (
-        <div className="h-screen w-screen bg-[#011EF5] text-center items-center flex">
-          <AnimateCOunter />
-        </div>
-      )}
+      {/* TODO: Header with Menu and Footer */}
       {/* TODO: animate page transtition on reveal kind of; fade the blue screen out once the animation is finished */}
+      {animating && <Loader />}
       {!animating && (
-        <>
-          <motion.section
-            // style={{ opacity: opacity }}
-            ref={targetRef}
-            className="h-screen w-screen justify-center relative"
-          >
-            <div className="fixed top-[35%] left-[25%] flex flex-col text-center items-center ">
-              <div className="text-8xl text-black tracking-tighter ">
-                MATTEO
-              </div>
-              <br />
-              <div className="text-8xl text-black tracking-tighter">
-                <span className=" italic">J</span>UST
-              </div>
-            </div>
-            {/* <div className="absolute h-40 z-10 bg-red-400 w-20"></div> */}
-          </motion.section>
-          <section className="bg-yellow-200 h-screen w-screen justify-center relative">
-            hi
-          </section>
-        </>
+        <main>
+          <Hero />
+          <div className="relative z-10 w-full">
+            <Images />
+            <Projects />
+          </div>
+        </main>
       )}
     </>
   );
