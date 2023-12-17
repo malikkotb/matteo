@@ -4,7 +4,8 @@ import { useState, useEffect, useRef } from "react";
 import Hero from "./components/Hero";
 import Loader from "./components/Loader";
 import Images from "./components/Images";
-import Projects from "./components/Projects";
+import Projects from "./components/Projects"
+import SecondImg from "./components/SecondImg"
 
 export default function page() {
   const [animating, setAnimating] = useState(false);

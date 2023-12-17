@@ -24,7 +24,7 @@ export default function Hero() {
     >
       <motion.div
         style={{ scale, position: position }}
-        className="top-[15%] left-[35%] flex flex-col text-center items-center "
+        className="top-[35%] left-[35%] flex flex-col text-center items-center "
       >
         {/* A possibility: */}
         <div>
