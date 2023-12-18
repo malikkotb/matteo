@@ -35,11 +35,6 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* A different possibility
-        <div>
-
-        </div> */}
-
       </motion.div>
     </motion.section>
   );
