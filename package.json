@@ -17,7 +17,7 @@
     "@types/three": "^0.157.1",
     "framer-motion": "^10.16.16",
     "gsap": "^3.12.2",
-    "next": "13.5.5",
+    "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
     "three": "^0.157.0"

@@ -17,8 +17,6 @@ export default function page() {
 
   return (
     <>
-      {/* TODO: Header with Menu and Footer */}
-      {/* TODO: animate page transtition on reveal kind of; fade the blue screen out once the animation is finished */}
       {animating && <Loader />}
       {!animating && (
         <main>

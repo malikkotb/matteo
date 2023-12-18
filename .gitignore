@@ -3,3 +3,4 @@ node_modules
 .yarn
 .next
 public
+.DS_Store

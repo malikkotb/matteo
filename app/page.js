@@ -9,8 +9,6 @@ export default function Home() {
         <div className="">Matteo Just</div>
       </div>
 
-      {/* TODO: lenis smooth scroll */}
-
       <div className="h-2/4 grid grid-cols-4">
         <SceneCanvas source={"/bmw_m4"} />
         <SceneCanvas source={"/mini.glb"} />
